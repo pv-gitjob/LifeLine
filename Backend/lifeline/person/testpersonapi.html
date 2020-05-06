@@ -1,0 +1,81 @@
+<html>
+  <body>
+
+    <h3>Test Person API</h3>
+	
+    <form action="personinsert.php" method="post">
+      Full name: <input type="text" name="name"/><br>
+      Phone number: <input type="text" name="phone"/><br>
+      Password: <input type="password" name="acc_pass"/><br>
+      <input type="submit" name="submit" value="Create user"/>
+    </form>
+
+	<form action="personpictureupload.php" method="post" enctype="multipart/form-data">
+      Phone number: <input type="text" name="phone"/><br>
+	  <input type="file" name="fileToUpload" id="fileToUpload"><br>
+      <input type="submit" name="submit" value="Set profile picture"/>
+    </form>
+	
+    <form>
+      <input type="button" onclick="window.location.href = 'persongetall.php';" value="Get every user"/>
+    </form>
+
+    <form action="personget.php" method="post">
+      Phone number: <input type="text" name="phone"/><br>
+      <input type="submit" name="submit" value="Find user"/>
+    </form>
+
+    <form action="personlogin.php" method="post">
+      Phone number: <input type="text" name="phone"/><br>
+      Password: <input type="password" name="acc_pass"/><br>
+      <input type="submit" name="submit" value="Login"/>
+    </form>
+
+    <form action="persondelete.php" method="post">
+      Phone number: <input type="text" name="phone"/><br>
+      Password: <input type="password" name="acc_pass"/><br>
+      <input type="submit" name="submit" value="Delete user"/>
+    </form>
+
+    <form action="personsetname.php" method="post">
+      Phone number: <input type="text" name="phone"/><br>
+      New name: <input type="text" name="name"/><br>
+      <input type="submit" name="submit" value="Change name"/>
+    </form>
+
+    <form action="personsetphone.php" method="post">
+      Old phone number: <input type="text" name="old_phone"/><br>
+      New phone number: <input type="text" name="new_phone"/><br>
+      Password: <input type="password" name="acc_pass"/><br>
+      <input type="submit" name="submit" value="Change number"/>
+    </form>
+
+    <form action="personsetpass.php" method="post">
+      Phone number: <input type="text" name="phone"/><br>
+      Old Password: <input type="password" name="old_pass"/><br>
+      New Password: <input type="password" name="new_pass"/><br>
+      <input type="submit" name="submit" value="Change password"/>
+    </form>
+    
+	<form action="personpicturedelete.php" method="post" enctype="multipart/form-data">
+      Phone number: <input type="text" name="phone"/><br>
+      <input type="submit" name="submit" value="Delete profile picture"/>
+    </form>
+	
+	<form action="personsetlocation.php" method="post" enctype="multipart/form-data">
+      Phone number: <input type="text" name="phone"/><br>
+	  Latitude: <input type="number" step="any" name="latitude"/><br>
+	  Longitude: <input type="number" step="any" name="longitude"/><br>
+	  When: <input type="text" name="when"/><br>
+      <input type="submit" name="submit" value="Update location"/>
+    </form>
+	<!--
+	<form action="personforgotpassword.php" method="post" enctype="multipart/form-data">
+      Phone number: <input type="text" name="phone"/><br>
+      <input type="submit" name="submit" value="Forgot password"/>
+    </form>
+	-->
+  </body>
+</html>
+
+

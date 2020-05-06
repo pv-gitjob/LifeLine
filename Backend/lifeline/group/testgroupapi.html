@@ -1,0 +1,100 @@
+<html>
+  <body>
+
+    <h3>Test Group API</h3>
+	<p>Role only take in 3 characters, and "adm" is administrator. Put "usr" for regular members.</p>
+    
+	<form action="groupinsert.php" method="post">
+      Group name: <input type="text" name="name"/><br>
+      Owner phone number: <input type="text" name="phone"/><br>
+      <input type="submit" name="submit" value="Create group"/>
+    </form>
+	
+	<form action="grouppictureupload.php" method="post" enctype="multipart/form-data">
+      Group id: <input type="number" name="group_id"/><br>
+	  <input type="file" name="fileToUpload" id="fileToUpload"><br>
+      <input type="submit" name="submit" value="Set profile picture"/>
+    </form>
+	
+    <form>
+      <input type="button" onclick="window.location.href = 'groupgeteverygroup.php';" value="Get every group"/>
+    </form>
+	
+    <form action="groupget.php" method="post">
+      Group id: <input type="number" name="group_id"/><br>
+      <input type="submit" name="submit" value="Find group"/>
+    </form>
+
+    <form action="groupgetall.php" method="post">
+      Phone number: <input type="text" name="phone"/><br>
+      <input type="submit" name="submit" value="Find groups"/>
+    </form>
+
+    <form action="groupdelete.php" method="post">
+      Group id: <input type="number" name="group_id"/><br>
+	  Owner phone number: <input type="text" name="owner_phone"/><br>
+      <input type="submit" name="submit" value="Delete group"/>
+    </form>
+
+    <form action="groupchangeowner.php" method="post">
+      Group id: <input type="number" name="group_id"/><br>
+      Old owner phone number: <input type="text" name="old_phone"/><br>
+      New owner phone number: <input type="text" name="new_phone"/><br>
+      <input type="submit" name="submit" value="Change group owner"/>
+    </form>
+
+    <form action="groupsetname.php" method="post">
+      Group id: <input type="number" name="group_id"/><br>
+	  Owner phone number: <input type="text" name="owner_phone"/><br>
+      New name: <input type="text" name="name"/><br>
+      <input type="submit" name="submit" value="Change name"/>
+    </form>
+
+    <form>
+      <input type="button" onclick="window.location.href = 'groupmembergetall.php';" value="Get all group members"/>
+    </form>
+
+    <form action="groupmemberinsert.php" method="post">
+      Group id: <input type="number" name="group_id"/><br>
+	  Admin phone number: <input type="text" name="admin_phone"/><br>
+      New member phone number: <input type="text" name="phone"/><br>
+      Role: <input type="text" name="role"/><br>
+      <input type="submit" name="submit" value="Add group member"/>
+    </form>
+
+    <form action="groupmembersetrole.php" method="post">
+      Group id: <input type="number" name="group_id"/><br>
+	  Admin phone number: <input type="text" name="admin_phone"/><br>
+      Member phone number: <input type="text" name="phone"/><br>
+      Role: <input type="text" name="role"/><br>
+      <input type="submit" name="submit" value="Set role"/>
+    </form>
+    
+    <form action="groupmemberdelete.php" method="post">
+      Group id: <input type="number" name="group_id"/><br>
+	  Admin phone number: <input type="text" name="admin_phone"/><br>
+      Member phone number: <input type="text" name="phone"/><br>
+      <input type="submit" name="submit" value="Delete group member"/>
+    </form>
+
+    <form action="groupmembergetmembers.php" method="post">
+      Group id: <input type="number" name="group_id"/><br>
+      <input type="submit" name="submit" value="Get group members"/>
+    </form>
+
+    <form action="groupchangeowner.php" method="post">
+      Group id: <input type="number" name="group_id"/><br>
+      Old owner phone number: <input type="text" name="old_owner"/><br>
+      New owner phone number: <input type="text" name="new_owner"/><br>
+      <input type="submit" name="submit" value="Change group owner"/>
+    </form>
+	
+	<form action="groupaccidentalert.php" method="post">
+      Victim phone number: <input type="text" name="phone"/><br>
+      <input type="submit" name="submit" value="Accident alert"/>
+    </form>
+
+  </body>
+</html>
+
+

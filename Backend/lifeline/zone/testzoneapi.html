@@ -1,0 +1,52 @@
+<html>
+  <body>
+
+    <h3>Test Zone API</h3>
+
+    <form>
+      <input type="button" onclick="window.location.href = 'zonegeteveryzone.php';" value="Get every zone"/>
+    </form>
+
+    <form action="zonegetallgroup.php" method="post">
+      Group ID: <input type="number" name="group_id"/><br>
+      <input type="submit" name="submit" value="Find group zones"/>
+    </form>
+	
+	<form action="zonegetallmember.php" method="post">
+      Group ID: <input type="number" name="group_id"/><br>
+	  Phone number: <input type="text" name="phone"/><br>
+      <input type="submit" name="submit" value="Find group member zones"/>
+    </form>
+	
+    <form action="zonegetalluser.php" method="post">
+      Phone number: <input type="text" name="phone"/><br>
+      <input type="submit" name="submit" value="Find user zones"/>
+    </form>
+
+    <form action="zoneinsert.php" method="post">
+	  Group ID: <input type="number" name="group_id"/><br>
+	  Admin phone: <input type="text" name="admin"/><br>
+      Member phone: <input type="text" name="phone"/><br>
+	  Zone name: <input type="text" name="name"/><br>
+      Latitude: <input type="number" step="any" name="latitude"/><br>
+	  Longitude: <input type="number" step="any" name="longitude"/><br>
+	  Curfew start: <input type="text" name="timing_start"/><br>
+	  Curfew end: <input type="text" name="timing_end"/><br>
+	  Radius: <input type="number" step="any" name="radius"/><br>
+      Safe(1 for safe zone, 0 for no-go zone): <input type="number" name="safe"/><br>
+      <input type="submit" name="submit" value="Create zone"/>
+    </form>
+
+    <form action="zonedelete.php" method="post">
+      Group ID: <input type="number" name="group_id"/><br>
+	  Admin phone: <input type="text" name="admin"/><br>
+      Member phone: <input type="text" name="phone"/><br>
+      Latitude: <input type="number" step="any" name="latitude"/><br>
+	  Longitude: <input type="number" step="any" name="longitude"/><br>
+      <input type="submit" name="submit" value="Delete zone"/>
+    </form>
+
+  </body>
+</html>
+
+

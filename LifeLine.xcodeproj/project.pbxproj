@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04010633242079420085F3E3 /* AccountSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04010632242079420085F3E3 /* AccountSettingsViewController.swift */; };
+		04099FFE2458D69800139366 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04099FFD2458D69800139366 /* RoundButton.swift */; };
+		040D4CA2245CC45500FA9EEB /* UICollectionView+indexPathForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D4CA1245CC45500FA9EEB /* UICollectionView+indexPathForView.swift */; };
+		040D4CA4245CC4BE00FA9EEB /* UITableView+indexPathForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D4CA3245CC4BE00FA9EEB /* UITableView+indexPathForView.swift */; };
+		040D4CA6245CD48300FA9EEB /* RoundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D4CA5245CD48300FA9EEB /* RoundImage.swift */; };
+		04114332245B918C009499A1 /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04114331245B918C009499A1 /* AddMemberViewController.swift */; };
+		0439774E24494D3500E501D3 /* Accelerometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439774D24494D3500E501D3 /* Accelerometer.swift */; };
+		043977522449500B00E501D3 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043977512449500B00E501D3 /* Speed.swift */; };
+		043F207524162F8600F25D1D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F207424162F8600F25D1D /* SignUpViewController.swift */; };
+		048008D2245A4D8F006AE329 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048008D1245A4D8F006AE329 /* Spinner.swift */; };
+		0483B1292421A804003BF6DB /* ChangePhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483B1282421A804003BF6DB /* ChangePhoneViewController.swift */; };
+		0483B12B2421A819003BF6DB /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483B12A2421A819003BF6DB /* ChangePasswordViewController.swift */; };
+		048F8183242555060090FE28 /* DeleteAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8182242555060090FE28 /* DeleteAccountViewController.swift */; };
+		0491A29A24244AAA00A3A404 /* Archiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491A29924244AAA00A3A404 /* Archiver.swift */; };
+		04928F2C24282F1C002C3549 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04928F2B24282F1C002C3549 /* ForgotPasswordViewController.swift */; };
+		04928F2E24282F78002C3549 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04928F2D24282F78002C3549 /* GroupsViewController.swift */; };
+		04938AB024293E5900B82DFB /* GroupViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04938AAF24293E5900B82DFB /* GroupViewCell.swift */; };
+		0494B0132415CD9A0016DEE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494B0122415CD9A0016DEE8 /* AppDelegate.swift */; };
+		0494B0152415CD9A0016DEE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494B0142415CD9A0016DEE8 /* SceneDelegate.swift */; };
+		0494B01A2415CD9A0016DEE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0494B0182415CD9A0016DEE8 /* Main.storyboard */; };
+		0494B01C2415CD9C0016DEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0494B01B2415CD9C0016DEE8 /* Assets.xcassets */; };
+		0494B01F2415CD9C0016DEE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0494B01D2415CD9C0016DEE8 /* LaunchScreen.storyboard */; };
+		0494B02A2415CD9C0016DEE8 /* LifeLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494B0292415CD9C0016DEE8 /* LifeLineTests.swift */; };
+		0494B0352415CD9C0016DEE8 /* LifeLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494B0342415CD9C0016DEE8 /* LifeLineUITests.swift */; };
+		0494B0432415CFD30016DEE8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494B0422415CFD30016DEE8 /* LoginViewController.swift */; };
+		0494B0472415E32E0016DEE8 /* LifeLineAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494B0462415E32E0016DEE8 /* LifeLineAPICaller.swift */; };
+		04DE239E244FADD7008E4DC6 /* AddGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE239D244FADD7008E4DC6 /* AddGroupViewController.swift */; };
+		04DE23A0244FB526008E4DC6 /* MemberViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE239F244FB526008E4DC6 /* MemberViewCell.swift */; };
+		04DE23A2244FB878008E4DC6 /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE23A1244FB878008E4DC6 /* MembersViewController.swift */; };
+		04E334CB245BBA1100FD442F /* AddZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E334CA245BBA1100FD442F /* AddZoneViewController.swift */; };
+		04EC0ED424525C3D00D27D8C /* GroupMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC0ED324525C3D00D27D8C /* GroupMemberViewController.swift */; };
+		04EC0ED624525CA600D27D8C /* ZonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC0ED524525CA600D27D8C /* ZonesViewController.swift */; };
+		1072ABFA667AF39E13E0FF1D /* Pods_LifeLineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCE532BF5BA05DA407DC2E3 /* Pods_LifeLineTests.framework */; };
+		680B2AFF64EB031726F01B66 /* Pods_LifeLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6F21843ABB99CA93C80E5C /* Pods_LifeLine.framework */; };
+		700FA84E245D12D8005F8D26 /* GroupSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700FA84D245D12D8005F8D26 /* GroupSettingsViewController.swift */; };
+		7064693E244F768B009A6E3A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7064693D244F768B009A6E3A /* ChatViewController.swift */; };
+		70646940244F76E0009A6E3A /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7064693F244F76E0009A6E3A /* ChatCell.swift */; };
+		9148F150C0005AE77307AD93 /* Pods_LifeLine_LifeLineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250B8067D9718DAA46CC7C41 /* Pods_LifeLine_LifeLineUITests.framework */; };
+		958EF87F245B75E600338308 /* UsersLocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958EF87E245B75E600338308 /* UsersLocationAnnotation.swift */; };
+		95E9893D245B812800624F82 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9893C245B812800624F82 /* Location.swift */; };
+		95EE366C245D0919009ACEBF /* ZoneViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE366B245D0919009ACEBF /* ZoneViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0494B0262415CD9C0016DEE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0494B0072415CD9A0016DEE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0494B00E2415CD9A0016DEE8;
+			remoteInfo = LifeLine;
+		};
+		0494B0312415CD9C0016DEE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0494B0072415CD9A0016DEE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0494B00E2415CD9A0016DEE8;
+			remoteInfo = LifeLine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04010632242079420085F3E3 /* AccountSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsViewController.swift; sourceTree = "<group>"; };
+		04099FFD2458D69800139366 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		040D4CA1245CC45500FA9EEB /* UICollectionView+indexPathForView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+indexPathForView.swift"; sourceTree = "<group>"; };
+		040D4CA3245CC4BE00FA9EEB /* UITableView+indexPathForView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+indexPathForView.swift"; sourceTree = "<group>"; };
+		040D4CA5245CD48300FA9EEB /* RoundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
+		04114331245B918C009499A1 /* AddMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberViewController.swift; sourceTree = "<group>"; };
+		0439774D24494D3500E501D3 /* Accelerometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accelerometer.swift; sourceTree = "<group>"; };
+		043977512449500B00E501D3 /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
+		043F207424162F8600F25D1D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		048008D1245A4D8F006AE329 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		0483B1282421A804003BF6DB /* ChangePhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePhoneViewController.swift; sourceTree = "<group>"; };
+		0483B12A2421A819003BF6DB /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		048F8182242555060090FE28 /* DeleteAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountViewController.swift; sourceTree = "<group>"; };
+		0491A29924244AAA00A3A404 /* Archiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archiver.swift; sourceTree = "<group>"; };
+		04928F2B24282F1C002C3549 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		04928F2D24282F78002C3549 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		04938AAF24293E5900B82DFB /* GroupViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewCell.swift; sourceTree = "<group>"; };
+		0494B00F2415CD9A0016DEE8 /* LifeLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0494B0122415CD9A0016DEE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0494B0142415CD9A0016DEE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0494B0192415CD9A0016DEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0494B01B2415CD9C0016DEE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0494B01E2415CD9C0016DEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0494B0202415CD9C0016DEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0494B0252415CD9C0016DEE8 /* LifeLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0494B0292415CD9C0016DEE8 /* LifeLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeLineTests.swift; sourceTree = "<group>"; };
+		0494B02B2415CD9C0016DEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0494B0302415CD9C0016DEE8 /* LifeLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0494B0342415CD9C0016DEE8 /* LifeLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeLineUITests.swift; sourceTree = "<group>"; };
+		0494B0362415CD9C0016DEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0494B0422415CFD30016DEE8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0494B0462415E32E0016DEE8 /* LifeLineAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeLineAPICaller.swift; sourceTree = "<group>"; };
+		04DE239D244FADD7008E4DC6 /* AddGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupViewController.swift; sourceTree = "<group>"; };
+		04DE239F244FB526008E4DC6 /* MemberViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewCell.swift; sourceTree = "<group>"; };
+		04DE23A1244FB878008E4DC6 /* MembersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
+		04E334CA245BBA1100FD442F /* AddZoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddZoneViewController.swift; sourceTree = "<group>"; };
+		04EC0ED324525C3D00D27D8C /* GroupMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMemberViewController.swift; sourceTree = "<group>"; };
+		04EC0ED524525CA600D27D8C /* ZonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonesViewController.swift; sourceTree = "<group>"; };
+		12B70B4D0714F4A313E3A8DA /* Pods-LifeLineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeLineTests.release.xcconfig"; path = "Target Support Files/Pods-LifeLineTests/Pods-LifeLineTests.release.xcconfig"; sourceTree = "<group>"; };
+		1BCE532BF5BA05DA407DC2E3 /* Pods_LifeLineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeLineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D95754CE3BB0A078ECA861B /* Pods-LifeLine-LifeLineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeLine-LifeLineUITests.debug.xcconfig"; path = "Target Support Files/Pods-LifeLine-LifeLineUITests/Pods-LifeLine-LifeLineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		250B8067D9718DAA46CC7C41 /* Pods_LifeLine_LifeLineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeLine_LifeLineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3252E9D81F24B54F66B34D3F /* Pods-LifeLine-LifeLineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeLine-LifeLineUITests.release.xcconfig"; path = "Target Support Files/Pods-LifeLine-LifeLineUITests/Pods-LifeLine-LifeLineUITests.release.xcconfig"; sourceTree = "<group>"; };
+		700FA84D245D12D8005F8D26 /* GroupSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupSettingsViewController.swift; sourceTree = "<group>"; };
+		7064693D244F768B009A6E3A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		7064693F244F76E0009A6E3A /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		8C4769600EA84A996B019323 /* Pods-LifeLineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeLineTests.debug.xcconfig"; path = "Target Support Files/Pods-LifeLineTests/Pods-LifeLineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		958EF87E245B75E600338308 /* UsersLocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersLocationAnnotation.swift; sourceTree = "<group>"; };
+		95E9893C245B812800624F82 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		95EE366B245D0919009ACEBF /* ZoneViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneViewCell.swift; sourceTree = "<group>"; };
+		9DCBDE215C0113696401EAA9 /* Pods-LifeLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeLine.release.xcconfig"; path = "Target Support Files/Pods-LifeLine/Pods-LifeLine.release.xcconfig"; sourceTree = "<group>"; };
+		BF6F21843ABB99CA93C80E5C /* Pods_LifeLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7674CC924FD37CA8426400 /* Pods-LifeLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeLine.debug.xcconfig"; path = "Target Support Files/Pods-LifeLine/Pods-LifeLine.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0494B00C2415CD9A0016DEE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680B2AFF64EB031726F01B66 /* Pods_LifeLine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0494B0222415CD9C0016DEE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1072ABFA667AF39E13E0FF1D /* Pods_LifeLineTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0494B02D2415CD9C0016DEE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9148F150C0005AE77307AD93 /* Pods_LifeLine_LifeLineUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0494B0062415CD9A0016DEE8 = {
+			isa = PBXGroup;
+			children = (
+				0494B0112415CD9A0016DEE8 /* LifeLine */,
+				0494B0282415CD9C0016DEE8 /* LifeLineTests */,
+				0494B0332415CD9C0016DEE8 /* LifeLineUITests */,
+				0494B0102415CD9A0016DEE8 /* Products */,
+				F837438F16910C6F4262AD41 /* Pods */,
+				D95E07F2F28C6799D60CFF19 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0494B0102415CD9A0016DEE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0494B00F2415CD9A0016DEE8 /* LifeLine.app */,
+				0494B0252415CD9C0016DEE8 /* LifeLineTests.xctest */,
+				0494B0302415CD9C0016DEE8 /* LifeLineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0494B0112415CD9A0016DEE8 /* LifeLine */ = {
+			isa = PBXGroup;
+			children = (
+				0494B01B2415CD9C0016DEE8 /* Assets.xcassets */,
+				0439774D24494D3500E501D3 /* Accelerometer.swift */,
+				04010632242079420085F3E3 /* AccountSettingsViewController.swift */,
+				04DE239D244FADD7008E4DC6 /* AddGroupViewController.swift */,
+				04114331245B918C009499A1 /* AddMemberViewController.swift */,
+				04E334CA245BBA1100FD442F /* AddZoneViewController.swift */,
+				0494B0122415CD9A0016DEE8 /* AppDelegate.swift */,
+				0491A29924244AAA00A3A404 /* Archiver.swift */,
+				0483B12A2421A819003BF6DB /* ChangePasswordViewController.swift */,
+				0483B1282421A804003BF6DB /* ChangePhoneViewController.swift */,
+				7064693F244F76E0009A6E3A /* ChatCell.swift */,
+				7064693D244F768B009A6E3A /* ChatViewController.swift */,
+				048F8182242555060090FE28 /* DeleteAccountViewController.swift */,
+				04099FFD2458D69800139366 /* RoundButton.swift */,
+				040D4CA5245CD48300FA9EEB /* RoundImage.swift */,
+				04928F2B24282F1C002C3549 /* ForgotPasswordViewController.swift */,
+				04EC0ED324525C3D00D27D8C /* GroupMemberViewController.swift */,
+				04928F2D24282F78002C3549 /* GroupsViewController.swift */,
+				04938AAF24293E5900B82DFB /* GroupViewCell.swift */,
+				700FA84D245D12D8005F8D26 /* GroupSettingsViewController.swift */,
+				0494B0462415E32E0016DEE8 /* LifeLineAPICaller.swift */,
+				95E9893C245B812800624F82 /* Location.swift */,
+				0494B0422415CFD30016DEE8 /* LoginViewController.swift */,
+				04DE23A1244FB878008E4DC6 /* MembersViewController.swift */,
+				04DE239F244FB526008E4DC6 /* MemberViewCell.swift */,
+				0494B0142415CD9A0016DEE8 /* SceneDelegate.swift */,
+				043F207424162F8600F25D1D /* SignUpViewController.swift */,
+				043977512449500B00E501D3 /* Speed.swift */,
+				048008D1245A4D8F006AE329 /* Spinner.swift */,
+				040D4CA1245CC45500FA9EEB /* UICollectionView+indexPathForView.swift */,
+				040D4CA3245CC4BE00FA9EEB /* UITableView+indexPathForView.swift */,
+				958EF87E245B75E600338308 /* UsersLocationAnnotation.swift */,
+				04EC0ED524525CA600D27D8C /* ZonesViewController.swift */,
+				95EE366B245D0919009ACEBF /* ZoneViewCell.swift */,
+				0494B01D2415CD9C0016DEE8 /* LaunchScreen.storyboard */,
+				0494B0182415CD9A0016DEE8 /* Main.storyboard */,
+				0494B0202415CD9C0016DEE8 /* Info.plist */,
+			);
+			path = LifeLine;
+			sourceTree = "<group>";
+		};
+		0494B0282415CD9C0016DEE8 /* LifeLineTests */ = {
+			isa = PBXGroup;
+			children = (
+				0494B0292415CD9C0016DEE8 /* LifeLineTests.swift */,
+				0494B02B2415CD9C0016DEE8 /* Info.plist */,
+			);
+			path = LifeLineTests;
+			sourceTree = "<group>";
+		};
+		0494B0332415CD9C0016DEE8 /* LifeLineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0494B0342415CD9C0016DEE8 /* LifeLineUITests.swift */,
+				0494B0362415CD9C0016DEE8 /* Info.plist */,
+			);
+			path = LifeLineUITests;
+			sourceTree = "<group>";
+		};
+		D95E07F2F28C6799D60CFF19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6F21843ABB99CA93C80E5C /* Pods_LifeLine.framework */,
+				250B8067D9718DAA46CC7C41 /* Pods_LifeLine_LifeLineUITests.framework */,
+				1BCE532BF5BA05DA407DC2E3 /* Pods_LifeLineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F837438F16910C6F4262AD41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA7674CC924FD37CA8426400 /* Pods-LifeLine.debug.xcconfig */,
+				9DCBDE215C0113696401EAA9 /* Pods-LifeLine.release.xcconfig */,
+				1D95754CE3BB0A078ECA861B /* Pods-LifeLine-LifeLineUITests.debug.xcconfig */,
+				3252E9D81F24B54F66B34D3F /* Pods-LifeLine-LifeLineUITests.release.xcconfig */,
+				8C4769600EA84A996B019323 /* Pods-LifeLineTests.debug.xcconfig */,
+				12B70B4D0714F4A313E3A8DA /* Pods-LifeLineTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0494B00E2415CD9A0016DEE8 /* LifeLine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0494B0392415CD9C0016DEE8 /* Build configuration list for PBXNativeTarget "LifeLine" */;
+			buildPhases = (
+				80DE85360FD07B2D4ADD5923 /* [CP] Check Pods Manifest.lock */,
+				0494B00B2415CD9A0016DEE8 /* Sources */,
+				0494B00C2415CD9A0016DEE8 /* Frameworks */,
+				0494B00D2415CD9A0016DEE8 /* Resources */,
+				2D3DB0F2FE608F07271341FB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeLine;
+			productName = LifeLine;
+			productReference = 0494B00F2415CD9A0016DEE8 /* LifeLine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0494B0242415CD9C0016DEE8 /* LifeLineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0494B03C2415CD9C0016DEE8 /* Build configuration list for PBXNativeTarget "LifeLineTests" */;
+			buildPhases = (
+				BE035215BD23849F3B84C762 /* [CP] Check Pods Manifest.lock */,
+				0494B0212415CD9C0016DEE8 /* Sources */,
+				0494B0222415CD9C0016DEE8 /* Frameworks */,
+				0494B0232415CD9C0016DEE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0494B0272415CD9C0016DEE8 /* PBXTargetDependency */,
+			);
+			name = LifeLineTests;
+			productName = LifeLineTests;
+			productReference = 0494B0252415CD9C0016DEE8 /* LifeLineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0494B02F2415CD9C0016DEE8 /* LifeLineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0494B03F2415CD9C0016DEE8 /* Build configuration list for PBXNativeTarget "LifeLineUITests" */;
+			buildPhases = (
+				BE02C34C0F3FF59FBA7E553E /* [CP] Check Pods Manifest.lock */,
+				0494B02C2415CD9C0016DEE8 /* Sources */,
+				0494B02D2415CD9C0016DEE8 /* Frameworks */,
+				0494B02E2415CD9C0016DEE8 /* Resources */,
+				3FE17D55467732A40540615D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0494B0322415CD9C0016DEE8 /* PBXTargetDependency */,
+			);
+			name = LifeLineUITests;
+			productName = LifeLineUITests;
+			productReference = 0494B0302415CD9C0016DEE8 /* LifeLineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0494B0072415CD9A0016DEE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Praveen Vandeyar";
+				TargetAttributes = {
+					0494B00E2415CD9A0016DEE8 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					0494B0242415CD9C0016DEE8 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 0494B00E2415CD9A0016DEE8;
+					};
+					0494B02F2415CD9C0016DEE8 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 0494B00E2415CD9A0016DEE8;
+					};
+				};
+			};
+			buildConfigurationList = 0494B00A2415CD9A0016DEE8 /* Build configuration list for PBXProject "LifeLine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0494B0062415CD9A0016DEE8;
+			productRefGroup = 0494B0102415CD9A0016DEE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0494B00E2415CD9A0016DEE8 /* LifeLine */,
+				0494B0242415CD9C0016DEE8 /* LifeLineTests */,
+				0494B02F2415CD9C0016DEE8 /* LifeLineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0494B00D2415CD9A0016DEE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0494B01F2415CD9C0016DEE8 /* LaunchScreen.storyboard in Resources */,
+				0494B01C2415CD9C0016DEE8 /* Assets.xcassets in Resources */,
+				0494B01A2415CD9A0016DEE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0494B0232415CD9C0016DEE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0494B02E2415CD9C0016DEE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D3DB0F2FE608F07271341FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifeLine/Pods-LifeLine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifeLine/Pods-LifeLine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LifeLine/Pods-LifeLine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FE17D55467732A40540615D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifeLine-LifeLineUITests/Pods-LifeLine-LifeLineUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifeLine-LifeLineUITests/Pods-LifeLine-LifeLineUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LifeLine-LifeLineUITests/Pods-LifeLine-LifeLineUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80DE85360FD07B2D4ADD5923 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LifeLine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE02C34C0F3FF59FBA7E553E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LifeLine-LifeLineUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE035215BD23849F3B84C762 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LifeLineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0494B00B2415CD9A0016DEE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0483B1292421A804003BF6DB /* ChangePhoneViewController.swift in Sources */,
+				04EC0ED624525CA600D27D8C /* ZonesViewController.swift in Sources */,
+				95EE366C245D0919009ACEBF /* ZoneViewCell.swift in Sources */,
+				0483B12B2421A819003BF6DB /* ChangePasswordViewController.swift in Sources */,
+				04114332245B918C009499A1 /* AddMemberViewController.swift in Sources */,
+				04928F2C24282F1C002C3549 /* ForgotPasswordViewController.swift in Sources */,
+				04E334CB245BBA1100FD442F /* AddZoneViewController.swift in Sources */,
+				70646940244F76E0009A6E3A /* ChatCell.swift in Sources */,
+				0494B0432415CFD30016DEE8 /* LoginViewController.swift in Sources */,
+				95E9893D245B812800624F82 /* Location.swift in Sources */,
+				0494B0132415CD9A0016DEE8 /* AppDelegate.swift in Sources */,
+				04938AB024293E5900B82DFB /* GroupViewCell.swift in Sources */,
+				0494B0152415CD9A0016DEE8 /* SceneDelegate.swift in Sources */,
+				04DE23A0244FB526008E4DC6 /* MemberViewCell.swift in Sources */,
+				048F8183242555060090FE28 /* DeleteAccountViewController.swift in Sources */,
+				04099FFE2458D69800139366 /* RoundButton.swift in Sources */,
+				043977522449500B00E501D3 /* Speed.swift in Sources */,
+				040D4CA4245CC4BE00FA9EEB /* UITableView+indexPathForView.swift in Sources */,
+				0491A29A24244AAA00A3A404 /* Archiver.swift in Sources */,
+				04928F2E24282F78002C3549 /* GroupsViewController.swift in Sources */,
+				04DE23A2244FB878008E4DC6 /* MembersViewController.swift in Sources */,
+				04EC0ED424525C3D00D27D8C /* GroupMemberViewController.swift in Sources */,
+				048008D2245A4D8F006AE329 /* Spinner.swift in Sources */,
+				0494B0472415E32E0016DEE8 /* LifeLineAPICaller.swift in Sources */,
+				958EF87F245B75E600338308 /* UsersLocationAnnotation.swift in Sources */,
+				040D4CA6245CD48300FA9EEB /* RoundImage.swift in Sources */,
+				0439774E24494D3500E501D3 /* Accelerometer.swift in Sources */,
+				043F207524162F8600F25D1D /* SignUpViewController.swift in Sources */,
+				7064693E244F768B009A6E3A /* ChatViewController.swift in Sources */,
+				04DE239E244FADD7008E4DC6 /* AddGroupViewController.swift in Sources */,
+				04010633242079420085F3E3 /* AccountSettingsViewController.swift in Sources */,
+				040D4CA2245CC45500FA9EEB /* UICollectionView+indexPathForView.swift in Sources */,
+				700FA84E245D12D8005F8D26 /* GroupSettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0494B0212415CD9C0016DEE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0494B02A2415CD9C0016DEE8 /* LifeLineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0494B02C2415CD9C0016DEE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0494B0352415CD9C0016DEE8 /* LifeLineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0494B0272415CD9C0016DEE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0494B00E2415CD9A0016DEE8 /* LifeLine */;
+			targetProxy = 0494B0262415CD9C0016DEE8 /* PBXContainerItemProxy */;
+		};
+		0494B0322415CD9C0016DEE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0494B00E2415CD9A0016DEE8 /* LifeLine */;
+			targetProxy = 0494B0312415CD9C0016DEE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0494B0182415CD9A0016DEE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0494B0192415CD9A0016DEE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0494B01D2415CD9C0016DEE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0494B01E2415CD9C0016DEE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0494B0372415CD9C0016DEE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0494B0382415CD9C0016DEE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0494B03A2415CD9C0016DEE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA7674CC924FD37CA8426400 /* Pods-LifeLine.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8APX7SXT4Z;
+				INFOPLIST_FILE = LifeLine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pv.LifeLine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0494B03B2415CD9C0016DEE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DCBDE215C0113696401EAA9 /* Pods-LifeLine.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JU72V5H8A4;
+				INFOPLIST_FILE = LifeLine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Stephenbaity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0494B03D2415CD9C0016DEE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C4769600EA84A996B019323 /* Pods-LifeLineTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8APX7SXT4Z;
+				INFOPLIST_FILE = LifeLineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pv.LifeLineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeLine.app/LifeLine";
+			};
+			name = Debug;
+		};
+		0494B03E2415CD9C0016DEE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B70B4D0714F4A313E3A8DA /* Pods-LifeLineTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8APX7SXT4Z;
+				INFOPLIST_FILE = LifeLineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pv.LifeLineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeLine.app/LifeLine";
+			};
+			name = Release;
+		};
+		0494B0402415CD9C0016DEE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D95754CE3BB0A078ECA861B /* Pods-LifeLine-LifeLineUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8APX7SXT4Z;
+				INFOPLIST_FILE = LifeLineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pv.LifeLineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LifeLine;
+			};
+			name = Debug;
+		};
+		0494B0412415CD9C0016DEE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3252E9D81F24B54F66B34D3F /* Pods-LifeLine-LifeLineUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8APX7SXT4Z;
+				INFOPLIST_FILE = LifeLineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pv.LifeLineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LifeLine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0494B00A2415CD9A0016DEE8 /* Build configuration list for PBXProject "LifeLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0494B0372415CD9C0016DEE8 /* Debug */,
+				0494B0382415CD9C0016DEE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0494B0392415CD9C0016DEE8 /* Build configuration list for PBXNativeTarget "LifeLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0494B03A2415CD9C0016DEE8 /* Debug */,
+				0494B03B2415CD9C0016DEE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0494B03C2415CD9C0016DEE8 /* Build configuration list for PBXNativeTarget "LifeLineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0494B03D2415CD9C0016DEE8 /* Debug */,
+				0494B03E2415CD9C0016DEE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0494B03F2415CD9C0016DEE8 /* Build configuration list for PBXNativeTarget "LifeLineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0494B0402415CD9C0016DEE8 /* Debug */,
+				0494B0412415CD9C0016DEE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0494B0072415CD9A0016DEE8 /* Project object */;
+}
