@@ -28,21 +28,16 @@ LifeLine is an app where users are able to see where groups of people are on a m
 
 ## Product Spec
 
-### 1. User Stories (Required and Optional)
+### 1. User Stories
 
 **Required Must-have Stories**
-* [x] As someone with multiple phones I want to be able to create an account so that I can use the application from different devices.
-* [x] As someone who wants to change phones I want to be able to change my account phone number so that I can keep the groups associated with that account.
-* [x] As a group member I want to see my group geofences in a map view so that I can abide by them.
-* [x] As a dad I want to know when my child leaves the curfew radius so that I know if they're going somewhere they shouldn't.
-* [x] As a mom I want to know where my children are on the map so that I know they got to the destination safe.
-* [x] As a friend I want to see when my friends are speeding so that I can tell them to drive responsibly.
-
-**Optional Nice-to-have Stories**
-* [x] As a regular user I want a profile settings options so that I can customize my profile.
-* [ ] As a parent I want to be notified if my child is texting and driving so I can tell them not to text and drive.
-* [ ] As a business owner I want to be alerted when my delivery driver goes off route so I can make sure my drivers are working.
-* [ ] As a granddaughter I want to see when my grandmother's phone is on low batery so I can remind her to charge it.
+* As someone with multiple phones, I want to be able to create an account so that I can use the application from different devices.
+* As someone who wants to change phones, I want to be able to change my account phone number so that I can keep the groups associated with that account.
+* As a member of a team, I want to see my team's geofences in a map view so that I can abide by them.
+* As a dad, I want to know when my child leaves the curfew radius so that I know if they're going somewhere they shouldn't.
+* As a mom, I want to know where my children are on the map so that I know they got to the destination safe.
+* As a friend, I want to see when my friends are speeding so that I can tell them to drive responsibly.
+* As a regular, user I want a profile settings options so that I can customize my profile.
 
 ### 2. Screen Archetypes
 * Login Screen
