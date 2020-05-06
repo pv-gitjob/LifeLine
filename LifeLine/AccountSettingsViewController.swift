@@ -28,7 +28,6 @@ class AccountSettingsViewController: UIViewController, UIImagePickerControllerDe
         self.phone.text = (self.dict["phone"] as! String)
         
         let pictureUrl = URL(string: dict["picture"] as! String)!
-        
         self.view.addSubview(UIView().customActivityIndicator(view: self.view, backgroundColor: UIColor.green))
         Alamofire.request(pictureUrl).responseData { (response) in
             if response.error == nil {
@@ -37,7 +36,6 @@ class AccountSettingsViewController: UIViewController, UIImagePickerControllerDe
                         self.picture.image = UIImage(data: data)
                         self.picture.setRounded()
                     }
-                
             }
         }
         self.view.subviews.last?.removeFromSuperview()
@@ -69,15 +67,14 @@ class AccountSettingsViewController: UIViewController, UIImagePickerControllerDe
         }
         present(picker,animated: true, completion: nil )
     }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[.editedImage] as! UIImage
         let size = CGSize(width: 300, height: 300)
         let scaledImage = image.af_imageScaled(to: size)
         picture.image = scaledImage
         dismiss(animated: true, completion: nil)
-        
     }
-    
     
     @IBAction func updateName(_ sender: Any) {
         self.view.addSubview(UIView().customActivityIndicator(view: self.view,backgroundColor: UIColor.green))

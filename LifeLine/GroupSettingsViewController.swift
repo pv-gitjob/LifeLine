@@ -67,7 +67,6 @@ class GroupSettingsViewController: UIViewController, UIImagePickerControllerDele
         let scaledImage = image.af_imageScaled(to: size)
         photo.image = scaledImage
         dismiss(animated: true, completion: nil)
-        
     }
     
     @IBAction func photoButton(_ sender: Any) {

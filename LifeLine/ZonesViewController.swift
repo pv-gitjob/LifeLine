@@ -9,7 +9,6 @@
 import MapKit
 import UIKit
 
-
 class ZonesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var table: UITableView!
@@ -54,7 +53,6 @@ class ZonesViewController: UIViewController, UITableViewDataSource, UITableViewD
 		
 		let cell = table.dequeueReusableCell(withIdentifier: "ZoneViewCell") as! ZoneViewCell
 		
-	
         let zone = zones[String(indexPath.row)] as! [String:Any]
 		let name = zone["name"] as! String
         let latitude = zone["latitude"] as! Double
@@ -64,9 +62,7 @@ class ZonesViewController: UIViewController, UITableViewDataSource, UITableViewD
         let radius = zone["radius"] as! Double
         let safe = zone["safe"] as! Bool
         
-		cell.zoneName.text = name  
-		
-        
+		cell.zoneName.text = name
         return cell
     }
 	
@@ -81,7 +77,6 @@ class ZonesViewController: UIViewController, UITableViewDataSource, UITableViewD
 		let radius = selectedZone["radius"] as! Double
 		let safe = selectedZone["safe"] as! Bool
 		
-		
 		let selectedZoneLocation = CLLocation(latitude: latitude, longitude: longitude)
         let region = MKCoordinateRegion(center: selectedZoneLocation.coordinate, latitudinalMeters: 500.0, longitudinalMeters: 500.0)
         let subtitleString = "From \(start) to \(end)"
@@ -89,13 +84,10 @@ class ZonesViewController: UIViewController, UITableViewDataSource, UITableViewD
 		
 		let circle = MKCircle(center: selectedZoneLocation.coordinate, radius: 30.0)
         
-       
-		
 		mapView.isHidden = false
         mapView.setRegion(region, animated: true)
 		mapView.addAnnotation(userLocationAnnotation)
 		mapView.addOverlay(circle)
-      
 	}
 	
 	func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -121,8 +113,6 @@ class ZonesViewController: UIViewController, UITableViewDataSource, UITableViewD
 		renderer.lineWidth = 2
 		return renderer
 	}
-	
-	
     /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ZonesToZone" {

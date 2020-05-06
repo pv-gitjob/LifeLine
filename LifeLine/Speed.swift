@@ -18,14 +18,12 @@ class Speed: NSObject, CLLocationManagerDelegate {
     let sendSpeedAlert = ChatViewController()
     func testSpeed() {
         print("started speed watch")
-
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestAlwaysAuthorization()
         manager.startUpdatingLocation()
-        
-
     }
+    
     func locationManager(manager: CLLocationManager, didUpdateLocations locations:[CLLocation]) {
         let location = locations[0]
         var speed = location.speed
@@ -34,22 +32,7 @@ class Speed: NSObject, CLLocationManagerDelegate {
         if speed > 10{
             notificationController.body = "slow down you are going  \(speed) at location \(location) "
          //   sendSpeedAlert.autoSpeedMessage(speed: "speed", location: location)
-            
         }
-
-
     }
-
-
-
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
 
 }

@@ -18,11 +18,11 @@ class UsersLocationAnnotation: NSObject, MKAnnotation {
         self.title = title
         self.subtitle = subtitle
         self.coordinate = coordinate
-        
         super.init()
     }
     
     func SetTitle(newTitle: String) {
         title = newTitle
     }
+    
 }
