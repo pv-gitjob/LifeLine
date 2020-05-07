@@ -3,8 +3,8 @@ LifeLine - README
 
 ## Lifeline, stay connected with the people in your life
 
-## Video Walkthrough
-Here's a walkthrough of implemented user stories: <br><br>
+### Video Walkthrough
+<br>
 <img src='http://g.recordit.co/jzT2f3zDUw.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
 
 ## Table of Contents
