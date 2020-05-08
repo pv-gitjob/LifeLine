@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class GroupMemberViewController: UIViewController {
 
@@ -21,8 +22,23 @@ class GroupMemberViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(group)
-        name.text = group
+        
+        self.view.addSubview(UIView().customActivityIndicator(view: self.view, backgroundColor: UIColor.green))
+        name.text = member["name"] as? String
+        roleField.text = member["role"] as? String
+        phone.text = member["phone"] as? String
+
+        let pictureUrl = URL(string: member["picture"] as! String)!
+        Alamofire.request(pictureUrl).responseData { (response) in
+            if response.error == nil {
+                print(response.result)
+                    if let data = response.data {
+                        self.picture.image = UIImage(data: data)
+                        self.picture.setRounded()
+                    }
+            }
+        }
+        self.view.subviews.last?.removeFromSuperview()
     }
 
     @IBAction func setRole(_ sender: Any) {

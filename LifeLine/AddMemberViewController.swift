@@ -20,7 +20,7 @@ class AddMemberViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func resetPassword(_ sender: Any) {
+    @IBAction func addMember(_ sender: Any) {
         self.view.addSubview(UIView().customActivityIndicator(view: self.view, backgroundColor: UIColor.green))
         let userinfo = Archiver().getObject(fileName: "userinfo") as! NSDictionary
         let admin = userinfo["phone"] as! String
