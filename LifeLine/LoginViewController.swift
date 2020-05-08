@@ -49,7 +49,8 @@ class LoginViewController: UIViewController {
                     }
                 }
             }
-           // Location.manager.checkLocationServices()
+            //Location.manager.checkLocationServices()
+            //AccelerometerController().startAccelerometer()
             self.view.subviews.last?.removeFromSuperview()
             self.performSegue(withIdentifier: "SignInSegue", sender: self)
         }
@@ -58,7 +59,8 @@ class LoginViewController: UIViewController {
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if resultLabel.text == "success" {
-            Location.manager.checkLocationServices()
+            //Location.manager.checkLocationServices()
+            //AccelerometerController().startAccelerometer()
             let phone = self.phoneField.text!
             let currentUser = PFUser.current()
             if currentUser == nil {

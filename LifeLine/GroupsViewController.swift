@@ -43,15 +43,37 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
            }
         }
         task.resume()
-        AccelerometerController().startAccelerometer()
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(doSomething), for: .valueChanged)
+        table.refreshControl = refreshControl
     }
 
+    @objc func doSomething(refreshControl: UIRefreshControl) {
+        let userinfo = Archiver().getObject(fileName: "userinfo") as! NSDictionary
+         let phone = (userinfo["phone"] as! String)
+         
+         let url = URL(string: LifeLineAPICaller().baseURL + "group/groupgetall.php")!
+         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+         request.httpMethod = "POST"
+         let postString = "phone=\(phone)"
+         request.httpBody = postString.data(using: String.Encoding.utf8)
+         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+         let task = session.dataTask(with: request) { (data, response, error) in
+            if let error = error {
+               print(error.localizedDescription)
+            } else if let data = data {
+             let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+             self.dict = dataDictionary
+             self.table.reloadData()
+            }
+         }
+         task.resume()
+        refreshControl.endRefreshing()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidLoad()
-        
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.0)
 
         table.dataSource = self
         table.delegate = self

@@ -48,6 +48,31 @@ class MembersViewController: UIViewController, UITableViewDelegate, UITableViewD
             }
         }
         task.resume()
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(doSomething), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+    }
+    
+    @objc func doSomething(refreshControl: UIRefreshControl) {
+        let url = URL(string: LifeLineAPICaller().baseURL + "group/groupmembergetmembers.php")!
+        var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+        request.httpMethod = "POST"
+        let groupID = group["group_id"] as! String
+        let postString = "group_id=\(groupID)"
+        request.httpBody = postString.data(using: String.Encoding.utf8)
+        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+        let task = session.dataTask(with: request) { (data, response, error) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let data = data {
+                let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                self.dict = dataDictionary
+                self.tableView.reloadData()
+            }
+        }
+        task.resume()
+        refreshControl.endRefreshing()
     }
     
     /*
