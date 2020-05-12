@@ -29,8 +29,6 @@ LifeLine is an app where users are able to see where groups of people are on a m
 ## Product Spec
 
 ### 1. User Stories
-
-**Required Must-have Stories**
 * As someone with multiple phones, I want to be able to create an account so that I can use the application from different devices.
 * As someone who wants to change phones, I want to be able to change my account phone number so that I can keep the groups associated with that account.
 * As a member of a team, I want to see my team's geofences in a map view so that I can abide by them.
