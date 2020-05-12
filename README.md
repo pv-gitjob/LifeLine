@@ -79,17 +79,7 @@ LifeLine is an app where users are able to see where groups of people are on a m
 
 ## Schema 
 ### Models
-Strings, Images, and Dictionaries to send information.
-Dictionaries to recieve information.
-
-   | Property      | Type     | Description |
-   | ------------- | -------- | ------------|
-   | User          | Dictionary | User information |
-   | Name          | String   | User display name|
-   | Phone Number  | String   | User phone number|
-   | Image         | Png      | User display image |
-   | Groups        | Dictionary | Groups the user is in |
-   | Group Members | Dictionary | Members of a group |
+<img src="https://github.com/pv-gitjob/LifeLine/blob/master/Readme%20Assets/DB%20Design.png" width=400>
    
 ### Networking
 - AWS EC2 Instance
