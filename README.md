@@ -79,7 +79,7 @@ LifeLine is an app where users are able to see where groups of people are on a m
 
 ## Schema 
 ### Models
-<img src="https://github.com/pv-gitjob/LifeLine/blob/master/Readme%20Assets/DB%20Design.png" width=400>
+<img src="https://github.com/pv-gitjob/LifeLine/blob/master/Readme%20Assets/DB%20Design.png" width=500>
    
 ### Networking
 - AWS EC2 Instance
