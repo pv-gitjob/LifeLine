@@ -41,20 +41,28 @@ LifeLine is an app where users are able to see where groups of people are on a m
 
 ### 2. Screen Archetypes
 * Login Screen
-   * User can sign up 
-   * User can log in
+  * Sign in 
+  * Sign Up
+  * Forgot Password
 * Account Settings Screen
-   * User can edit their account information
-   * User can log out
-   * User can delete their account
+  * Edit account information
+  * Sign out
+  * Delete account
 * Groups Screen
-   * User can create groups
-   * User can invite other users 
-   * User can edit other users' roles
-   * User can edit groups
-* Maps Screen
-    * User can see people on the map
-    * User can filter by group
+  * Create group
+  * View groups 
+* Group Screen
+  * View group members
+  * Locate group member on map
+  * Edit other users' roles
+  * Group Chat
+  * Invite members
+* Group Settings Screen
+  * Edit group information
+  * Leave/Delete group
+* Chat Screen
+  * View messages and alerts
+  * Send messages
 
 ### 3. Navigation
 
