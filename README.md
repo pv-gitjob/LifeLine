@@ -19,12 +19,12 @@ LifeLine is an app where users are able to see where groups of people are on a m
 
 ### App Evaluation
 
-- **Category: Lifestyle** 
-- **Mobile: iOS android to come soon**
-- **Story: See where your friends and family are**
-- **Market: Familes, companies and friends can all use this app to see where each other are and how they are driving**
-- **Habit: This app runs in the background and you would open it to see where someone is or check alerts of someone driving too fast or getting into an accident**
-- **Scope: We are aiming this at all age groups. Families  can use this to keep track of teens and elder family members. Companies can use this to keep track of delivery workers to hold people accountable. Our main goal is to be the preferred driving behavior and location app**
+- Category: Lifestyle 
+- Mobile: iOS android to come soon
+- Story: See where your friends and family are
+- Market: Familes, companies and friends can all use this app to see where each other are and how they are driving
+- Habit: This app runs in the background and you would open it to see where someone is or check alerts of someone driving too fast or getting into an accident
+- Scope: Aimed at all age groups. Families  can use this to keep track of teens and elder family members. Companies can use this to keep track of delivery workers to hold people accountable. Main goal is to be the preferred driving behavior and location app
 
 ## Product Spec
 
