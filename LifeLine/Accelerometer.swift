@@ -2,14 +2,13 @@
 //  AccelerometerController.swift
 //  LifeLine
 //
-//  Created by Mark Falcone on 4/3/20.
+//  Created by Praveen V on 4/3/20.
 //  Copyright © 2020 Praveen Vandeyar. All rights reserved.
 //
 import UIKit
 import CoreMotion
 import CoreLocation
 import UserNotifications
-
 
 class AccelerometerController: NSObject {
 
@@ -20,7 +19,7 @@ class AccelerometerController: NSObject {
         notificationController.title = "Accident Alert"
         notificationController.subtitle = "Sudden Acceleration"
         notificationController.badge = 1
-        notificationController.body = "we detected a rapid change in motion"
+        notificationController.body = "Rapid change in motion"
         let notificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
         let request = UNNotificationRequest(identifier: "largeAcc", content: notificationController, trigger: notificationTrigger)
         if self.motionManager.isAccelerometerAvailable {
