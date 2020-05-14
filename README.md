@@ -1,11 +1,7 @@
-LifeLine - README 
+LifeLine
 ===
-
-## Lifeline, stay connected with the people in your life
-
-### Video Walkthrough
-<br>
-<img src='http://g.recordit.co/jzT2f3zDUw.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
+### Stay connected with the people in your life
+<img src='http://g.recordit.co/jzT2f3zDUw.gif' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -63,25 +59,19 @@ LifeLine is an app where users are able to see where groups of people are on a m
   * Send messages
 
 ### 3. Navigation
-
-**Tab Navigation** (Tab to Screen)
-* Groups tab
-* Settings tab
-* Map tab
+**Wireframe**
+<p float="left">
+<img src="https://github.com/pv-gitjob/LifeLine/blob/master/Readme%20Assets/LL_SignUp_SignIn.png" width=100>
+<img src="https://github.com/pv-gitjob/LifeLine/blob/master/Readme%20Assets/LL_Profile_Contacts.png" width=100>
+<img src="https://github.com/pv-gitjob/LifeLine/blob/master/Readme%20Assets/LL_MapDisplay.png" width=100>
+<img src="https://github.com/pv-gitjob/LifeLine/blob/master/Readme%20Assets/LL_Countdown.png" width=100>
+</p>
 
 **Flow Navigation** (Screen to Screen)
 * Signup/SignIn screen; Displays logo with splash page. Ability to SignUp for service or Log in to an account.
 * User Profile screen; Displays user information with profile image, countdown timer edit function, and user contacts editing    function.
 * Map screen; Displays current location of user. With Search function, user can locate those in their contacts list.
 * Countdown screen; Countdown appears after a sufficient impact, and will cycle down then alert those nearby for assitance unless the stop button is used to negate the countdown.
-
-## Wireframe
-<p float="left">
-<img src="https://github.com/GroupAlert/LifeLine/blob/master/ReadMe%20Assets/LL_SignUp_SignIn.png" width=100>
-<img src="https://github.com/GroupAlert/LifeLine/blob/master/ReadMe%20Assets/LL_Profile_Contacts.png" width=100>
-<img src="https://github.com/GroupAlert/LifeLine/blob/master/ReadMe%20Assets/LL_MapDisplay.png" width=100>
-<img src="https://github.com/GroupAlert/LifeLine/blob/master/ReadMe%20Assets/LL_Countdown.png" width=100>
-</p>
 
 ## Schema 
 ### Models
