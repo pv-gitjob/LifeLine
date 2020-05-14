@@ -2,7 +2,7 @@
 //  AccelerometerController.swift
 //  LifeLine
 //
-//  Created by Praveen V on 4/3/20.
+//  Created by Mark Falcone on 4/3/20.
 //  Copyright © 2020 Praveen Vandeyar. All rights reserved.
 //
 import UIKit
